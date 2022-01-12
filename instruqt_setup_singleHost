@@ -1,0 +1,41 @@
+#!/bin/bash
+cat <<EOF > entando.sh
+
+sudo kubectl apply -f https://raw.githubusercontent.com/entando/entando-releases/v6.3.2/dist/ge-1-1-6/namespace-scoped-deployment/cluster-resources.yaml
+
+sudo kubectl create namespace entando
+
+sudo kubectl apply -n entando -f https://raw.githubusercontent.com/entando/entando-releases/v6.3.2/dist/ge-1-1-6/namespace-scoped-deployment/orig/namespace-resources.yaml
+
+curl -sfL https://github.com/entando-k8s/entando-helm-quickstart/archive/v6.3.2.tar.gz | tar xvz
+
+cd entando-helm-quickstart-6.3.2
+
+sudo kubectl apply -f sample-configmaps/entando-operator-config.yaml -n entando
+
+#Updating values.yml
+
+echo '****************INSTRUQT_PARTICIPANT_ID =' ${INSTRUQT_PARTICIPANT_ID}
+sed -i 's/##singleHostName:  test.mycluster.com/singleHostName: ${HOSTNAME}.${INSTRUQT_PARTICIPANT_ID}.instruqt.io/g' values.yaml
+echo '****************INSTRUQT_PARTICIPANT_ID is successfully set'
+echo '****************${HOSTNAME}.${INSTRUQT_PARTICIPANT_ID}.instruqt.io'
+
+# Prints the hostname of the sandbox host 
+echo $HOSTNAME.$INSTRUQT_PARTICIPANT_ID.instruqt.io
+
+#Generate the template file:
+sudo helm template my-eks-app -n entando ./ > my-eks-app.yaml
+
+#Deploy Entando via this command
+sudo kubectl apply -n entando -f my-eks-app.yaml 
+
+#Entando startup
+sudo kubectl -n entando get pods
+
+#Check for the Entando ingresses using
+#sudo kubectl describe ingress -n entando
+sudo kubectl get ingress -n entando
+
+EOF
+chmod 777 entando.sh
+
