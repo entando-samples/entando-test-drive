@@ -59,7 +59,9 @@ cd entando-helm-quickstart-6.3.2
 
 #Updating entando-operator-config.yaml
 sed -i 's/#  entando.tls.secret.name: sample-tls-secret/  entando.tls.secret.name: sample-tls-secret/g' sample-configmaps/entando-operator-config.yaml
-sed -i 's/#  entando.ca.secret.name: sample-ca-cert-secret/  entando.ca.secret.name: sample-ca-cert-secret/g' sample-configmaps/entando-operator-config.yaml
+sed -i 's/#  entando.ca.secret.name: sample-ca-cert-secret/  entando.ca.secret.name: sample-ca-cert-secret/g' sample-configmaps/entando-operator-config.yaml 
+sed -i 's/#  entando.default.routing.suffix: your.domain.com/  entando.default.routing.suffix: ${HOSTNAME}.${INSTRUQT_PARTICIPANT_ID}.instruqt.io/g' sample-configmaps/entando-operator-config.yaml
+
 
 #Updating values.yml
 sed -i 's/##singleHostName:  test.mycluster.com/singleHostName: ${HOSTNAME}.${INSTRUQT_PARTICIPANT_ID}.instruqt.io/g' values.yaml
@@ -100,6 +102,7 @@ echo "type: Opaque" >> sample-secrets/sample-ca-cert-secret.yaml
 sudo kubectl apply -f sample-secrets/sample-tls-secret.yaml -n entando
 sudo kubectl apply -f sample-secrets/sample-ca-cert-secret.yaml -n entando
 sudo kubectl apply -f sample-configmaps/entando-operator-config.yaml -n entando
+
 sudo helm template quickstart ./ > output.yaml
 sed -i "41i\        environmentVariables: " output.yaml
 sed -i '42i\        - name: "APPLICATIONBASEURL"' output.yaml
@@ -108,7 +111,12 @@ sed -i '43i\          value: "https://${HOSTNAME}.${INSTRUQT_PARTICIPANT_ID}.ins
 sudo kubectl apply -f output.yaml -n entando
 echo '*********************************************************'
 echo '****************Please wait for 10-15 mins***************'
-echo '********************************'************************'
+echo '*********************************************************'
+
+#Install the current offical release of the CLI via the following command
+curl -L https://get.entando.org/cli | bash
+source "$HOME/.entando/activate"
+
+#ent pro new
 EOF
 chmod 777 start.sh
-
