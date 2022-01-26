@@ -1,4 +1,11 @@
 #!/bin/bash
+set -euxo pipefail
+
+until [ -f /opt/instruqt/bootstrap/host-bootstrap-completed ]; do
+    echo "Waiting for instruqt bootstrap to complete"
+    sleep 1
+done
+
 cat <<EOF > server.csr.cnf
 [req]
 default_bits = 2048
@@ -29,23 +36,26 @@ DNS.3=myexample1.com
 DNS.4=localhost
 EOF
 
+#patch-cm.sh is used to patch the quickstart-eci ingress with /k8s/
+cat <<EOF > patch-cm.sh
+sudo kubectl -n entando get deployment quickstart-cm-deployment -o yaml > entandocm.yaml
+sed -i 's/  replicas: 1/  replicas: 0/g' entandocm.yaml
+sudo kubectl -n entando apply -f entandocm.yaml
+
+sudo kubectl -n entando get deployment quickstart-cm-deployment -o yaml > entandocm.yaml
+sed -i 's/\/k8s/\/k8s\//g' entandocm.yaml
+sed -i 's/  replicas: 0/  replicas: 1/g' entandocm.yaml
+sudo kubectl -n entando apply -f entandocm.yaml
+#rm entandocm.yaml
+
+EOF
+chmod 777 patch-cm.sh
+
 cat <<EOF > start.sh
-
-
-openssl genrsa -des3 -out rootCA.key 2048
-openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 1460 -out rootCA.pem -subj "/C=US/ST=MN/L=Eagan/O=Tech Forum/OU=Marketing/CN=${HOSTNAME}.${INSTRUQT_PARTICIPANT_ID}.instruqt.io/emailAddress=admin@techforum.com/"
-
-#echo '****************Updating server.csr.cnf***************'
-#sed -i 's/CN = localhost/CN = ${HOSTNAME}.${INSTRUQT_PARTICIPANT_ID}.instruqt.io/g' server.csr.cnf
-#echo '**************** server.csr.cnf is successfully set '****************'
-
-
-#echo '****************Updating v3.ext***************'
-#sed -i 's/DNS.1 = myexample.com/DNS.1 = ${HOSTNAME}.${INSTRUQT_PARTICIPANT_ID}.instruqt.io/g' v3.ext
-#echo '****************${HOSTNAME}.${INSTRUQT_PARTICIPANT_ID}.instruqt.io is successfully set'
-
-openssl req -new -sha256 -nodes -out server.csr -newkey rsa:2048 -keyout server.key -config server.csr.cnf
-openssl x509 -req -in server.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateserial -out server.crt -days 500 -sha256 -extfile v3.ext
+openssl genrsa -des3 -out rootCA.key -passout pass:entando 2048
+openssl req -x509 -new -nodes -key rootCA.key -passin pass:entando -sha256 -days 1460 -out rootCA.pem -subj "/C=US/ST=MN/L=Eagan/O=Tech Forum/OU=Marketing/CN=entando-vm.z4fbf9ehuit6.instruqt.io/emailAddress=admin@techforum.com/"
+openssl req -new -sha256 -nodes -out server.csr -newkey rsa:2048 -keyout server.key -passin pass:entando -config server.csr.cnf#openssl x509 -req -in server.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateserial -out server.crt -days 500 -sha256 -extfile v3.ext
+openssl x509 -req -in server.csr -CA rootCA.pem -CAkey rootCA.key -passin pass:foobar -CAcreateserial -out server.crt -days 500 -sha256 -extfile v3.ext
 
 var=$(echo $HOSTNAME.$INSTRUQT_PARTICIPANT_ID.instruqt.io)
 sudo kubectl create namespace entando
