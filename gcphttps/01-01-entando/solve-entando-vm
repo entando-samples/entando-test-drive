@@ -1,0 +1,4 @@
+#!/bin/sh
+#kubectl create deployment nginx --image nginx
+sudo kubectl get ingress -n entando -o jsonpath='{.items[2].spec.rules[*].host}{.items[2].spec.rules[*].http.paths[1].path}{"\n"}'
+

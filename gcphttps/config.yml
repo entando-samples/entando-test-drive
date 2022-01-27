@@ -1,0 +1,8 @@
+version: "3"
+virtualmachines:
+- name: entando-vm
+  image: gcpproject-337807/image-1
+  shell: /bin/bash
+  machine_type: n1-standard-2
+  allow_external_ingress:
+  - https

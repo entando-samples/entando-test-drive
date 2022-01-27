@@ -21,7 +21,6 @@ O=Tech Forum
 OU=Marketing
 emailAddress=admin@techforum.com
 CN = ${HOSTNAME}.${INSTRUQT_PARTICIPANT_ID}.instruqt.io
-
 EOF
 #chmod 777 server.csr.cnf
 
@@ -35,7 +34,6 @@ DNS.1 = ${HOSTNAME}.${INSTRUQT_PARTICIPANT_ID}.instruqt.io
 DNS.2=sub.myexample.com
 DNS.3=myexample1.com
 DNS.4=localhost
-
 EOF
 
 #patch-cm.sh is used to patch the quickstart-eci ingress with /k8s/
