@@ -57,7 +57,7 @@ cat <<EOF > start.sh
 openssl genrsa -des3 -out rootCA.key -passout pass:entando 2048
 openssl req -x509 -new -nodes -key rootCA.key -passin pass:entando -sha256 -days 1460 -out rootCA.pem -subj "/C=US/ST=MN/L=Eagan/O=Tech Forum/OU=Marketing/CN=entando-vm.z4fbf9ehuit6.instruqt.io/emailAddress=admin@techforum.com/"
 openssl req -new -sha256 -nodes -out server.csr -newkey rsa:2048 -keyout server.key -passin pass:entando -config server.csr.cnf#openssl x509 -req -in server.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateserial -out server.crt -days 500 -sha256 -extfile v3.ext
-openssl x509 -req -in server.csr -CA rootCA.pem -CAkey rootCA.key -passin pass:foobar -CAcreateserial -out server.crt -days 500 -sha256 -extfile v3.ext
+openssl x509 -req -in server.csr -CA rootCA.pem -CAkey rootCA.key -passin pass:entando -CAcreateserial -out server.crt -days 500 -sha256 -extfile v3.ext
 
 var=$(echo $HOSTNAME.$INSTRUQT_PARTICIPANT_ID.instruqt.io)
 sudo kubectl create namespace entando
