@@ -34,8 +34,11 @@ tabs:
   type: website
   path: /app-builder/
   url: https://dev.entando.org/
-- title: App Builder
+- title: Authentication
   type: external
+  url: https://named-k3s.${_SANDBOX_ID}.instruqt.io/app-builder/
+- title: App Builder
+  type: website
   url: https://named-k3s.${_SANDBOX_ID}.instruqt.io/app-builder/
 difficulty: basic
 timelimit: 120000
