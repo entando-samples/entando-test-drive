@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#kubectl get deployment nginx || fail-message "I expected an nginx deployment"  
+sudo kubectl get pods -n entando || fail-message "I expected pods running in namespace"  
+
+status="$(curl -Is --insecure https://${HOSTNAME}.${INSTRUQT_PARTICIPANT_ID}.instruqt.io/entando-de-app/en/hello_world_app.page | head -1)"
+validate=( $status )
+if [ ${validate[-2]} == "200" ]; then
+  echo "OK"
+else
+  echo "NOT RESPONDING"
+  fail-message "Page is not created, Please follow the widget to create one"  
+fi

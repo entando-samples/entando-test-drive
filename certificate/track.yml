@@ -1,0 +1,21 @@
+slug: certificate
+id: 7xdkpfewnoy6
+type: track
+title: App Builder with HTTPS
+teaser: Set up the Entando App Builder and Create Components
+description: |-
+  Set up Entando with a few clicks. Then try the platform with a simple widget or walk through the Welcome Wizard in our App Builder.
+
+  **Maximize the potential of your Kubernetes stack with the leading modular application platform for Kubernetes**
+    - Begin Developing with Entando Micro Frontend Platform for Kubernetes
+icon: https://dev.entando.org/assets/img/entando_square_logo.ebb299a1.svg
+tags:
+- ""
+owner: entando
+developers:
+- sachin.baghel@newvisionsoftware.in
+- rohit.sengar@newvisionsoftware.in
+- g.giudici@entando.com
+private: true
+published: false
+checksum: "6981494531530526523"
