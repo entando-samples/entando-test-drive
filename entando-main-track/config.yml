@@ -1,0 +1,8 @@
+version: "3"
+virtualmachines:
+- name: named-k3s
+  image: entando632/named-k3s-preloaded-ca-ent
+  shell: /bin/bash
+  machine_type: n1-standard-2
+  allow_external_ingress:
+  - https
