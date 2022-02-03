@@ -2,64 +2,32 @@
 slug: 02-entando
 id: dcbvpxyt6jxx
 type: challenge
-title: 'Welcome Wizard: Creating a Page'
-teaser: 'Welcome Wizard: Creating a Page containing content and other Entando components'
+title: Tableau bundle installation
+teaser: Add MFE Bundle and see it as widget on page
 notes:
 - type: text
-  contents: |-
-    # Page Management
-    The App Builder provides the capability to publish application **pages** containing content as well as other Entando components.
-
-    **Page Templates** are used to layout the available frames on a page
+  contents: |
+    # Tableau bundle installation
+    This Challenge will explain you the bundle **installation**.
+tabs:
+- title: shell
+  type: terminal
+  hostname: named-k3s
+- title: App Builder
+  type: website
+  url: https://named-k3s.${_SANDBOX_ID}.instruqt.io/app-builder/
 difficulty: basic
 timelimit: 1200
 ---
-In the Left Sidebar, Click on *Pages > Management*
+# Install the tableau js bundle
 
-Here, you'll see a list of pages that represent the page tree of your site.
-Click Add in the bottom-right to create a new page.
+Execute below command:
+```
+ent bundler from-git -r https://github.com/nshaw/2021-12-tableau-bundle.git -d | ent kubectl apply -n entando -f -
+```
 
-## Enter the following required details:
+Goto App Builder tab > goto Repository tab on side bar of application. You can see MFE is ready to install.
+![Image Description](../assets/tableau_bundle.png)
 
-- **Title:** used for SEO
+# Click on Install button & wait for successful installation.
 
-- **Code:** must be unique
-
-- **Page placement:** location of the Page in the Page Tree
-
-- **Owner Group:** Group that has access to the Page
-
-- **Page Template:** structure & presentation of the Page
-
-
-Click on the ***Save and Design*** button at the bottom.
-
-Once we save our settings, we can start designing our page with widgets and other components!
-
----
-
-# Now we are in the Designer Section.
-
-## Adding Widgets:
-
-In the Right Sidebar, Expand the Page menu
-Drag & drop the Logo widget into the dotted grey 'Logo' section on the page.
-
-Click Next to add pre-configured Navigation Menu widget to the page design for top level horizontal menu
-
-In the Right Sidebar, expand the CMS menu
-Drag & drop the Search Form widget into the dotted grey 'Search Form' section on the page.
-
-In the Right Sidebar, expand the System menu
-Drag & drop the Login widget into the dotted grey 'Login' section on the page.
-
-Click Next to add pre-configured Content widget to the page
-Click Next to add pre-configured Content List widget to the page
-Click Next to add pre-configured Navigation Menu widget to add link for sitemap in the footer
----
-
-Click ***Preview*** at the top to see what your page will look like before you publish!
-
-Click ***Publish*** at the bottom to see your page live.
-
----

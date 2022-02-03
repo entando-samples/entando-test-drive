@@ -2,8 +2,8 @@
 slug: 01-entando
 id: wwtqkv7pvfl9
 type: challenge
-title: Setting Up the Entando Platform
-teaser: Bringing up and running entando platform on Kubernetes
+title: 'Welcome Wizard: Creating a Page'
+teaser: 'Welcome Wizard: Creating a Page containing content and other Entando components'
 notes:
 - type: text
   contents: |
@@ -43,42 +43,7 @@ tabs:
 difficulty: basic
 timelimit: 120000
 ---
-<!-- Use the terminal to execute shell script:
-
-```
-sudo ./start.sh
-``` -->
-<!--
-``
-For Every pass phrase use same password : entando
-`` -->
-
-Wait for 5-10 mins then check for pods:
-```
-sudo kubectl -n entando get pods
-```
-
-Watch Entando startup. It can take around 10-15 minutes before the application is fully deployed and ready.
-```
-sudo kubectl -n entando get pods --watch
-```
-
-Use the terminal to check for the Entando ingresses using
-```
-sudo kubectl describe ingress -n entando
-```
-
-Use the terminal to get the Entando ingresses using
-```
-sudo kubectl get ingress -n entando
-```
-
-Use the terminal to manually patch the eci-ingress next, once the ingresses are in place
-```
-sudo ./patch-cm.sh
-```
-
-Click on `keycloak` tab to authenticate. It will open the login screen in new browser tab.
+Click on `Authentication` tab to authenticate. It will open the login screen in new browser tab.
 
 Once you see the login screen, enter the following login details:
 - Username: admin
@@ -89,8 +54,8 @@ Change the password if required.
 
 Click on `App Builder` tab inside instruqt and reload. It will show App Builder dashboard.
 
-``Follow the Welcome Wizard. On completion of wizard it will open the newly created page in the external browser as shown below``
+`Follow the Welcome Wizard. On completion of wizard it will open the newly created page in the external browser as shown below`
 
-![Image Description](../assets/hello_world_page.png)
+![Image Description](../assets/hello_world_app.png)
 
 To complete this challenge, press **Check**.
