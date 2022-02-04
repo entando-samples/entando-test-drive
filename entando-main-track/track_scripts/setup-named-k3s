@@ -171,10 +171,18 @@ export NVM_DIR="\$HOME/.nvm"
 [ -s "\$NVM_DIR/bash_completion" ] && \. "\$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 EOT
 echo '****************ENT ACTIVATION****************'
+
 cat <<EOT >> .bashrc
 [ -s "\$HOME/.entando/activate" ] && source \$HOME/.entando/activate --quiet --force 2>/dev/null
+
+# It can be used to patch the kc
+user=\`ent k get secrets/quickstart-kc-admin-secret --template={{.data.username}} | base64 -d\`
+pass=\`ent k get secrets/quickstart-kc-admin-secret --template={{.data.password}} | base64 -d\`
+dns=$(echo $HOSTNAME.$INSTRUQT_PARTICIPANT_ID.instruqt.io)
+./kc-adapter -u  https://\$dns \$user \$pass
 EOT
-# Add Auth Script here
+
+echo '****************KC Command Patched****************'
 # elapsed time
 duration=$SECONDS
 echo '****************ELAPSED TIME****************'
