@@ -27,6 +27,9 @@ notes:
 - type: video
   url: https://www.youtube.com/embed/EvbFHywvr0g
 tabs:
+- title: App Builder
+  type: website
+  url: https://named-k3s.${_SANDBOX_ID}.instruqt.io/app-builder/
 - title: shell
   type: terminal
   hostname: named-k3s
@@ -34,28 +37,21 @@ tabs:
   type: website
   path: /app-builder/
   url: https://dev.entando.org/
-- title: Authentication
-  type: external
-  url: https://named-k3s.${_SANDBOX_ID}.instruqt.io/app-builder/
-- title: App Builder
-  type: website
-  url: https://named-k3s.${_SANDBOX_ID}.instruqt.io/app-builder/
 difficulty: basic
 timelimit: 120000
 ---
-Click on `Authentication` tab to authenticate. It will open the login screen in new browser tab.
+<!-- Click on `Authentication` tab to authenticate. It will open the login screen in new browser tab. -->
 
 Once you see the login screen, enter the following login details:
 - Username: admin
 - Password: adminadmin
 
+Change the password.
 
-Change the password if required.
-
-Click on `App Builder` tab inside instruqt and reload. It will show App Builder dashboard.
+<!-- Click on `App Builder` tab inside instruqt and reload. It will show App Builder dashboard. -->
 
 `Follow the Welcome Wizard. On completion of wizard it will open the newly created page in the external browser as shown below`
 
 ![Image Description](../assets/hello_world_app.png)
 
-To complete this challenge, press **Check**.
+To continue to next challenge, press **Check**.

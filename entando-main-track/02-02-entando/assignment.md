@@ -26,8 +26,9 @@ Execute below command:
 ent bundler from-git -r https://github.com/nshaw/2021-12-tableau-bundle.git -d | ent kubectl apply -n entando -f -
 ```
 
-Goto App Builder tab > goto Repository tab on side bar of application. You can see MFE is ready to install.
+Goto *App Builder tab > goto Repository tab* on side bar of application. You can see MFE is ready to install.
 ![Image Description](../assets/tableau_bundle.png)
 
 # Click on Install button & wait for successful installation.
 
+To complete this challenge, press **Check**.

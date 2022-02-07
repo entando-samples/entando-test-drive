@@ -47,17 +47,20 @@ Once we save our settings, we can start designing our page with widgets and othe
 
 ## Adding Widgets:
 
-In the Right Sidebar, Expand the Page menu
-Drag & drop the Login widget inside System bucket into the dotted grey 'Login' section on the page.
+In the Right Sidebar, Scroll down and expand the **Page** menu
+Drag & drop the **Logo widget** inside the dotted grey **'Logo'** section on the page.
 
-In the Right Sidebar, Expand the Page menu
-Drag & drop the tableaujs bundle widget inside user bucket into the dotted grey 'section1' section on the page.
+In the Right Sidebar, Scroll down and expand the **User** menu
+Drag & drop the **Tableau Sample Widget** inside the dotted grey **'frame1'** section on the page.
+
+Change the *http to https* in the URL and click on *Save* button
+![My Image](../assets/tableauConfig.png)
 ---
 
-Click ***Save***
+<!-- Click ***Preview*** at the top to see what your page will look like before you publish! -->
 
-Click ***Preview*** at the top to see what your page will look like before you publish!
+Click ***Publish*** at the bottom.
 
-Click ***Publish*** at the bottom to see your page live.
+Click ***View Published Page*** at the right top to see your page live.
 
 ---
