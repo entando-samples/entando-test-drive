@@ -1,0 +1,13 @@
+#!/bin/bash -l
+
+SECONDS=0
+# Wait for the Instruqt host bootstrap to finish
+until [ -f /opt/instruqt/bootstrap/host-bootstrap-completed ]
+do
+    sleep 1
+done
+
+git clone https://github.com/entando-ps/instruqt-scripts.git && cp ./kc-adapter instruqt-scripts && cd instruqt-scripts && chmod +x *.sh
+
+source startup.sh
+

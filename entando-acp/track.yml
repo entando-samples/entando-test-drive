@@ -1,0 +1,20 @@
+slug: entando-acp
+id: zn089k19aoiz
+type: track
+title: entando-acp
+teaser: Set up the Entando App Builder and Create Components
+description: |-
+  Set up Entando with a few clicks. Then try the platform with a simple widget or walk through the Welcome Wizard in our App Builder.
+
+  **Maximize the potential of your Kubernetes stack with the leading modular application platform for Kubernetes**
+    - Begin Developing with Entando Micro Frontend Platform for Kubernetes
+icon: https://dev.entando.org/assets/img/entando_square_logo.ebb299a1.svg
+tags:
+- ""
+owner: entando
+developers:
+- sachin.baghel@newvisionsoftware.in
+private: false
+published: true
+show_timer: true
+checksum: "8912217271183775951"

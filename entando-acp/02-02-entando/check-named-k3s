@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo '****************Checking Tableau Bundle is installed or not****************'
+tableauBundleReady=`ent ecr list | grep "tableaujs-bundle" | grep "INSTALL_COMPLETED" | wc -l`
+if [ ${tableauBundleReady} == "1" ]; then
+  echo "OK"
+else
+  echo "NOT RESPONDING"
+  fail-message "Tableau Bundle is not installed, Please follow the instructions to install it correctly"  
+fi
