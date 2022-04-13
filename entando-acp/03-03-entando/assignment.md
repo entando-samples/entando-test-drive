@@ -44,6 +44,8 @@ Finally, in the **Settings** section choose the **1-2 Columns** **Page Template*
 
 Once all these fields are filled, click on the **Save and Design** button at the bottom, the Designer is displayed.
 
+Click on **Publish** at the bottom.
+
 ---
 
 Congratulations! You’ve completed the challenge. You've just discovered how to create a new page and open the design mode.
