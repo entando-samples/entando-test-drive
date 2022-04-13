@@ -11,9 +11,7 @@ notes:
   contents: |
     # Congratulations Composer!
 
-    The Tableau Packaged Business Capabilities micro frontend component is now usable in our application. It's time to finalize the composition by including both the micro frontend and the content component in a page.
-
-    Keep going. Success is right around the corner.
+    The Tableau Packaged Business Capabilities micro frontend component is now usable in our application. It's time to execute the second step of the composition, create the hosting page for our components.
 tabs:
 - title: App Builder
   type: website
