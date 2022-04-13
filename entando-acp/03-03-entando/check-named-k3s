@@ -1,9 +1,9 @@
 #!/bin/bash
-status="$(curl -Is --insecure https://${HOSTNAME}.${INSTRUQT_PARTICIPANT_ID}.instruqt.io/app-builder/page/configuration/s_p_tableau | head -1)"
+status="$(curl -Is --insecure https://${HOSTNAME}.${INSTRUQT_PARTICIPANT_ID}.instruqt.io/entando-de-app/en/s_p_tableau.page | head -1)"
 validate=( $status )
 if [ ${validate[-2]} == "200" ]; then
   echo "OK"
 else
   echo "NOT RESPONDING"
-  fail-message "Page is not created, Please follow the steps to create one"
+  fail-message "Page is not created, Please follow the instruction to create one"
 fi
