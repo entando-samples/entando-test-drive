@@ -5,6 +5,14 @@ type: challenge
 title: 'S&P Returns Dashboard: Compose the Page'
 teaser: In the previous challenge, we created a page, now we will see how to add content
   on that page
+notes:
+- type: text
+  contents: |
+    # Congratulations Composer!
+
+    The Page has been created and now it's time to finalize the composition by including both the micro frontend and the content component.
+
+    Keep going. Success is right around the corner.
 tabs:
 - title: App Builder
   type: website
