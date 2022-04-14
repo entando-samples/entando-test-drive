@@ -27,7 +27,7 @@ timelimit: 1200
 
 Now that the Tableau PBC is available, we can add it to a page. This PBC contains a micro frontend that displays the S&P Returns and Economic Indicators.
 
-In the Left Sidebar, **Click: Pages > Management**
+In the Left Sidebar, **<u>Click: Pages > Management</u>**
 
 Here you will see the current page tree for your application. **<u>Click: Add </u>** in the bottom-right to create a new page.
 
@@ -35,7 +35,7 @@ Here you will see the current page tree for your application. **<u>Click: Add </
 
   - In Title: **<u>S&P Tableau</u>**
 
-  - In the page tree section, **<u>select the page emplacement by clicking on Home</u>**, (it should be highlighted in blue).
+  - In the page tree section, **<u>select the page placement by clicking on Home</u>**, (it should be highlighted in blue).
 
   - In Page Groups: **<u>change Owner group from Administrator to Free Access</u>**
 

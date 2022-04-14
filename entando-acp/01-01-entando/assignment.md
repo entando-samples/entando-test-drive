@@ -12,8 +12,8 @@ notes:
     Entando is an **Application Composition Platform**.  It allows teams to compose apps from a set of modules and web content.   Entando enables teams to organize work into 4 roles (individuals perform one or more roles). They are:
 
     - **_Creators_** (developers who build the individual modules)
-    - **_Curators_** (individuals who manage a library of components)
-    - **_Composers_** (individuals who assemble components into applications)
+    - **_Curators_** (individuals who manage a library of modules)
+    - **_Composers_** (individuals who assemble modules into applications)
     - **_Consumers_** (individuals who either use or manage application configurations, e.g., users/roles/content mgmt)
 
     Next, we will demonstrate the role of an application **Composer** and walk through the steps to build your first composed application.

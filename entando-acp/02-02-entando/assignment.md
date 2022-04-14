@@ -11,7 +11,7 @@ notes:
   contents: |-
     **INSTALLING PBCs INTO THE APP BUILDER**
 
-    In this section, we will earn how to add a newly developed module to a web application.  Modules can be referred to as, **Packaged Business Capabilities** or PBCs.
+    In this section, we will learn how to add a newly developed module to a web application.  Modules can be referred to as, **Packaged Business Capabilities** or PBCs.
 
     We will install a Tableau PBC into our application on a new page.
 - type: video
@@ -26,8 +26,6 @@ tabs:
 difficulty: basic
 timelimit: 1200
 ---
-
-**INSTALLING PBCs INTO THE APP BUILDER**
 
 **STEP 1: ADD THE NEW  PBC INTO THE LOCAL REPOSITORY**
 

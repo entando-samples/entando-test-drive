@@ -49,9 +49,9 @@ You will be asked to select the content to display in this widget. Select an exi
 
 then, **<u>click on the checkbox next to "Sample - About us"</u>**.
 
-then, **<u>click on "Choose</u>**",
+then, **<u>click on "Choose"</u>**,
 
-then, **click on "Save"** to finalize the selection.
+then, **<u>click on "Save"</u>** to finalize the selection.
 
 Next, let's publish the page and check that it’s working as expected.
 
