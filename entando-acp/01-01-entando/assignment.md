@@ -7,7 +7,7 @@ teaser: A simple challenge to learn to get started with composition phase
 notes:
 - type: text
   contents: |-
-    **APP BUILDER OVERVIEW:**
+    **ENTANDO OVERVIEW:**
 
     Entando is an **Application Composition Platform**.  It allows teams to compose apps from a set of modules and web content.   Entando enables teams to organize work into 4 roles (individuals perform one or more roles). They are:
 

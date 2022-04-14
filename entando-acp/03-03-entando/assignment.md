@@ -33,7 +33,7 @@ Here you will see the current page tree for your application. **<u>Click: Add </
 
 **<u>Enter the following required details:</u>**
 
-  - In Title: **<u>S&P Tableau</u>**.
+  - In Title: **<u>S&P Tableau</u>**
 
   - In the page tree section, **<u>select the page emplacement by clicking on Home</u>**, (it should be highlighted in blue).
 
@@ -42,6 +42,8 @@ Here you will see the current page tree for your application. **<u>Click: Add </
   - In Settings **<u>choose 1-2 Columns Page Template</u>**.
 
 Then **<u> click: Save and Design</u>** button at the bottom, (the Designer is displayed).
+
+Then click on **<u>Publish</u>** at the bottom.
 
 Congratulations! You’ve completed the challenge. You've discovered how to create a new page and open the design mode. Next, you will discover how to drag and drop modules to the page.
 
