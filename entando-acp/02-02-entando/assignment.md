@@ -9,13 +9,12 @@ teaser: In the previous challenge, we learned how an Application Composition Pla
 notes:
 - type: text
   contents: |-
-    # Compose an S&P Financial Returns Dashboard page
-    Our users (Consumers) have asked us to give them one page where they can easily see S&P Financial Returns and Economic Indicators.
-    Fortunately, the Entando ACP provides a way to use existing components wrapped into Packaged Business Capabilities (PBC) and compose them to create this new page.
-    This PBC was created by our Creator team and validated by our Curator. That means we can use it in our application.
-    You are the main Composer of this challenge. Please proceed to the PBC installation to finish it.
 
-    A video with further explanation is waiting for you in the next slide.
+**INSTALLING PBCs INTO THE APP BUILDER**
+
+In this section, we will earn how to add a newly developed module to a web application.  Modules can be referred to as, **Packaged Business Capabilities** or PBCs.  
+
+We will install a Tableau PBC into our application on a new page.
 - type: video
   url: https://www.youtube.com/embed/W5Xnv5Uwrxw
 tabs:
@@ -28,45 +27,50 @@ tabs:
 difficulty: basic
 timelimit: 1200
 ---
-Hi Consumer,
-Our Curator has validated the Tableau PBC and it is now available.
 
-Please run the following command to deploy it in our Component Repository, where all components used in the application are listed.
+**INSTALLING PBCs INTO THE APP BUILDER**
+
+**STEP 1: ADD THE NEW  PBC INTO THE LOCAL REPOSITORY**
+
+A **Creator** (an individual developer or a developer team) has created a new Tableau Packaged Business Capability (**PBC**) displaying SAP Returns. Your goal as a **Composer** is to add this to the current application. <span style="text-decoration:underline;">(Ensure you are on the Shell tab on the left.)</span>
+
+**<span style="text-decoration:underline;">Run</span>** the following command to deploy the Tableau PBC into our local **Component Repository** (which holds all modules which Composers can use to deploy into apps).
+
 
 ```
 ent bundler from-git -r https://github.com/entando-samples/tableau-example-bundle -d | ent kubectl apply -n entando -f -
 ```
 
-Once it's registered, we need to install it from our Entando Component Repository (ECR). The installation process configures new resources on Kubernetes to run our components.
+This command will pull the module's code from **Github** and configure new resources in **Kubernetes** allowing the module to now be used within our **App Builder**. 
 
-To execute that task, be sure to be on the **App Builder tab**.
+**STEP 2:  INSTALL THE PBC INTO OUR APP BUILDER**
 
-In the Left Sidebar, Click on **Repository**.
+On the left, **<span style="text-decoration:underline;">click on the App Builder tab</span>**, 
 
-Click on the install button.
+then **<span style="text-decoration:underline;">click on the "Don't show next time</span>** checkbox, and  
+
+then **<span style="text-decoration:underline;">click Close </span>** and **<span style="text-decoration:underline;">click Yes</span>** to end the wizard. 
+
+In the Left Sidebar, **<span style="text-decoration:underline;">click Repository.</span>**
+
+As shown below, inside the tableaujs-bundle card, **<span style="text-decoration:underline;">click on the Install button.</span>**
 
 ![Image Description](../assets/tableau_bundle.png)
 
-When the installation process is finished, the install button switches to an uninstall plain green button.
+As shown below, after the installation process is finished, the install button will switch to an **uninstall** green button.
 
 ![Image Description](../assets/installedSuccessfully.png)
 
----
+Note, this process can be used to update or downgrade the version of any specific PBC.  
 
-You can navigate to the components entry list to see newly installed components from the PBC.
+**STEP 3: VERIFY THE PBC IS AVAILABLE**
 
-In the Left Sidebar, Click on **Components** > **Micro Frontends & Widgets**.
+In the Left Sidebar, **<span style="text-decoration:underline;">Click on Components > Micro Frontends & Widgets.</span>**
 
-All the micro frontends and widgets are listed here. If some are available out of the box, the installed components from the PBC are available under the **User** section.
-
-The **Tableau Sample Widget** is here.
+All out-of-the-box and user-installed components and PBCs are listed here.   Scroll down to the **User** section.   Observe that your tableaujs-bundle is displayed here and is now available to add to various pages in your application. 
 
 ![Image Description](../assets/list_widgets.png)
 
----
+Congratulations! You have completed this challenge.  In the next challenge, you will learn how to create a page which includes this PBC. 
 
-Congratulations! You completed this challenge in which you've installed your first PBC.
-
-The next challenge will learn you how to create a page and compose it with the component included in the PBC.
-When you are ready, validate this challenge by clicking **Check**.
-
+When you are ready, validate this challenge by clicking **<span style="text-decoration:underline;">Check</span>**.

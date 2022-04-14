@@ -9,9 +9,9 @@ teaser: In the previous challenge, we installed  the technical solution to compo
 notes:
 - type: text
   contents: |
-    # Congratulations Composer!
-
-    The Tableau Packaged Business Capabilities micro frontend component is now usable in our application. It's time to execute the second step of the composition, create the hosting page for our components.
+  **CREATE A PAGE FOR THE PBC**
+  
+  Now that the Tableau PBC is available in the App builder, the Composer can use it to build their application. In this challenge, we will create a new page in our application and prepare it for adding the PBC.
 tabs:
 - title: App Builder
   type: website
@@ -23,32 +23,26 @@ tabs:
 difficulty: basic
 timelimit: 1200
 ---
-Now that the Tableau Packaged Business Capabilities has been installed, the included components are available in the platform.
-This PBC contains a micro frontend that displays the S&P Returns and Economic Indicators.
+**CREATE A PAGE FOR THE PBC**
 
-In order to use it, we need to first define the page which will host it.
+Now that the Tableau PBC is available, we can add it to a page. This PBC contains a micro frontend that displays the S&P Returns and Economic Indicators.
 
-In the Left Sidebar, Click on **Pages** > **Management**
+In the Left Sidebar, **Click: Pages > Management**
 
-Here you see a list of pages that represents the page tree of your application.
-Click **Add** in the bottom-right to create a new page.
+Here you will see the current page tree for your application. **<span style="text-decoration:underline;">Click: Add </span>**in the bottom-right to create a new page.
 
-Enter the following required details:
+**<span style="text-decoration:underline;">Enter the following required details:</span>**
 
-In the **Info Section** fill the **Title:** with the **S&P Tableau**.
-Then, in the page tree, select the page emplacement by clicking on **Home**, it should be highlighted in blue.
+  - In Title: **<span style="text-decoration:underline;">S&P Tableau</span>**. 
 
-In the **Page Groups** section change **Owner group** from **Administrator** to **Free Access**
+  - In the page tree section, **<span style="text-decoration:underline;">select the page emplacement by clicking on Home</span>**, (it should be highlighted in blue).
 
-Finally, in the **Settings** section choose the **1-2 Columns** **Page Template**.
+  - In Page Groups: **<span style="text-decoration:underline;">change Owner group from Administrator to Free Access</span>**
 
-Once all these fields are filled, click on the **Save and Design** button at the bottom, the Designer is displayed.
+  - In Settings **<span style="text-decoration:underline;">choose 1-2 Columns Page Template</span>**.
 
-Click on **Publish** at the bottom.
+Then**<span style="text-decoration:underline;"> click: Save and Design</span>** button at the bottom, (the Designer is displayed).
 
----
+Congratulations! You’ve completed the challenge. You've discovered how to create a new page and open the design mode. Next, you will discover how to drag and drop modules to the page.
 
-Congratulations! You’ve completed the challenge. You've just discovered how to create a new page and open the design mode.
-Next, you will discover how to design it by drag and dropping components.
-
-Click **Check** at the bottom right to move to next challenge.
+**<span style="text-decoration:underline;">Click Check </span>**at the bottom right to move to the next challenge.
