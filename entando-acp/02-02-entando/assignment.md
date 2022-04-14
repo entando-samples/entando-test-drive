@@ -9,12 +9,11 @@ teaser: In the previous challenge, we learned how an Application Composition Pla
 notes:
 - type: text
   contents: |-
+    **INSTALLING PBCs INTO THE APP BUILDER**
 
-**INSTALLING PBCs INTO THE APP BUILDER**
+    In this section, we will earn how to add a newly developed module to a web application.  Modules can be referred to as, **Packaged Business Capabilities** or PBCs.  
 
-In this section, we will earn how to add a newly developed module to a web application.  Modules can be referred to as, **Packaged Business Capabilities** or PBCs.  
-
-We will install a Tableau PBC into our application on a new page.
+    We will install a Tableau PBC into our application on a new page.
 - type: video
   url: https://www.youtube.com/embed/W5Xnv5Uwrxw
 tabs:

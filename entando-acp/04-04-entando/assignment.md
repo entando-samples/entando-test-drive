@@ -7,10 +7,10 @@ teaser: In the previous challenge, we created a page, now we will see how to add
   on that page
 notes:
 - type: text
-  contents: |
-  **ADD TABLEAU PBC INTO YOUR APPLICATION**
+  contents: |-
+    **ADD TABLEAU PBC INTO YOUR APPLICATION**
   
-  In this section we will learn how to add the Tableau PBC into our application.
+    In this section we will learn how to add the Tableau PBC into our application.
 tabs:
 - title: App Builder
   type: website

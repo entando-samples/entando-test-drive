@@ -8,10 +8,10 @@ teaser: In the previous challenge, we installed  the technical solution to compo
   display the requested Financial information using a Micro Frontend component.
 notes:
 - type: text
-  contents: |
-  **CREATE A PAGE FOR THE PBC**
+  contents: |-
+    **CREATE A PAGE FOR THE PBC**
   
-  Now that the Tableau PBC is available in the App builder, the Composer can use it to build their application. In this challenge, we will create a new page in our application and prepare it for adding the PBC.
+    Now that the Tableau PBC is available in the App builder, the Composer can use it to build their application. In this challenge, we will create a new page in our application and prepare it for adding the PBC.
 tabs:
 - title: App Builder
   type: website
