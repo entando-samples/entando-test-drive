@@ -29,7 +29,7 @@ Now that the Tableau PBC is available, we can add it to a page. This PBC contain
 
 In the Left Sidebar, **Click: Pages > Management**
 
-Here you will see the current page tree for your application. **<span style="text-decoration:underline;">Click: Add </span>**in the bottom-right to create a new page.
+Here you will see the current page tree for your application. **<span style="text-decoration:underline;">Click: Add </span>** in the bottom-right to create a new page.
 
 **<span style="text-decoration:underline;">Enter the following required details:</span>**
 
@@ -41,8 +41,8 @@ Here you will see the current page tree for your application. **<span style="tex
 
   - In Settings **<span style="text-decoration:underline;">choose 1-2 Columns Page Template</span>**.
 
-Then**<span style="text-decoration:underline;"> click: Save and Design</span>** button at the bottom, (the Designer is displayed).
+Then **<span style="text-decoration:underline;"> click: Save and Design</span>** button at the bottom, (the Designer is displayed).
 
 Congratulations! You’ve completed the challenge. You've discovered how to create a new page and open the design mode. Next, you will discover how to drag and drop modules to the page.
 
-**<span style="text-decoration:underline;">Click Check </span>**at the bottom right to move to the next challenge.
+**<span style="text-decoration:underline;">Click Check </span>** at the bottom right to move to the next challenge.
