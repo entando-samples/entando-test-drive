@@ -9,7 +9,7 @@ notes:
 - type: text
   contents: |-
     **ADD TABLEAU PBC INTO YOUR APPLICATION**
-  
+
     In this section we will learn how to add the Tableau PBC into our application.
 tabs:
 - title: App Builder
@@ -23,44 +23,44 @@ timelimit: 1200
 
 **STEP 1:**
 
-As a Composer, designing a page means selecting components and placing them into pages. We do this by dragging & dropping elements from the tab on the right sidebar into the grey highlighted sections of the page on the left.  
+As a Composer, designing a page means selecting components and placing them into pages. We do this by dragging & dropping elements from the tab on the right sidebar into the grey highlighted sections of the page on the left.
 
-From the right sidebar,**<span style="text-decoration:underline;"> scroll down and expand the Page menu</span>**, 
+From the right sidebar,**<u> scroll down and expand the Page menu</u>**,
 
-then, **<span style="text-decoration:underline;">drag & drop the LOGO WIDGET inside the Logo section onto the page</span>**.
+then, **<u>drag & drop the LOGO WIDGET inside the Logo section onto the page</u>**.
 
-From the right sidebar, **<span style="text-decoration:underline;">scroll down and expand the User menu</span>**, 
+From the right sidebar, **<u>scroll down and expand the User menu</u>**,
 
-then, **<span style="text-decoration:underline;">drag & drop the Tableau Sample Widget inside the highlighted grey Frame1 on the page</span>**, 
+then, **<u>drag & drop the Tableau Sample Widget inside the highlighted grey Frame1 on the page</u>**,
 
-then, **<span style="text-decoration:underline;">click the SAVE button</span>** within the configuration window.
+then, **<u>click the SAVE button</u>** within the configuration window.
 
-Next, **<span style="text-decoration:underline;">click the Publish button </span>** at the bottom, and then **<span style="text-decoration:underline;">click View Published Page</span>** at the top right to view your page.  You should now see your page displaying the S&P Returns and Financial Indicators.
+Next, **<u>click the Publish button </u>** at the bottom, and then **<u>click View Published Page</u>** at the top right to view your page.  You should now see your page displaying the S&P Returns and Financial Indicators.
 
 **STEP 2:**
 
 We will now add additional content to the page to add additional information to this Tableau dashboard highlighting indicators and providing some analysis.
 
-**<span style="text-decoration:underline;">Scroll down and expand the CMS menu</span>**,
+**<u>Scroll down and expand the CMS menu</u>**,
 
-then, **<span style="text-decoration:underline;">drag & drop the Content Widget inside the grey Frame2 onto the page</span>**.
+then, **<u>drag & drop the Content Widget inside the grey Frame2 onto the page</u>**.
 
-You will be asked to select the content to display in this widget. Select an existing one by **<span style="text-decoration:underline;">clicking on the Add existing Content button</span>**, 
+You will be asked to select the content to display in this widget. Select an existing one by **<u>clicking on the Add existing Content button</u>**,
 
-then, **<span style="text-decoration:underline;">click on the checkbox next to "Sample - About us"</span>**. 
+then, **<u>click on the checkbox next to "Sample - About us"</u>**.
 
-then, **<span style="text-decoration:underline;">click on "Choose</span>**", 
+then, **<u>click on "Choose</u>**",
 
 then, **click on "Save"** to finalize the selection.
 
 Next, let's publish the page and check that it’s working as expected.
 
-**<span style="text-decoration:underline;">Click on Publish</span>** at the bottom, 
+**<u>Click on Publish</u>** at the bottom,
 
-then, **<span style="text-decoration:underline;">click on View Published Page</span>** at the top right to see your page live.  
+then, **<u>click on View Published Page</u>** at the top right to see your page live.
 
 Congratulations! You’ve completed this challenge.
 
-You’ve created a Dashboard page using an existing component and added a web content article to the same page. 
+You’ve created a Dashboard page using an existing component and added a web content article to the same page.
 
-Next, let's view the application from the Consumer role. **<span style="text-decoration:underline;">Click Check</span>** at the bottom right to move to the next challenge.
+Next, let's view the application from the Consumer role. **<u>Click Check</u>** at the bottom right to move to the next challenge.

@@ -9,8 +9,8 @@ notes:
   contents: |-
     **APP BUILDER OVERVIEW:**
 
-    Entando is an **Application Composition Platform**.  It allows teams to compose apps from a set of modules and web content.   Entando enables teams to organize work into 4 roles (individuals perform one or more roles). They are: 
-  
+    Entando is an **Application Composition Platform**.  It allows teams to compose apps from a set of modules and web content.   Entando enables teams to organize work into 4 roles (individuals perform one or more roles). They are:
+
     - **_Creators_** (developers who build the individual modules)
     - **_Curators_** (individuals who manage a library of components)
     - **_Composers_** (individuals who assemble components into applications)
@@ -35,22 +35,22 @@ timelimit: 120000
 ---
 **APP BUILDER OVERVIEW**
 
-For this challenge, all modules, content, and page layouts have been prebuilt by Creators.  We will assemble them into a single application as shown in this example: 
+For this challenge, all modules, content, and page layouts have been prebuilt by Creators.  We will assemble them into a single application as shown in this example:
 
 ![Image Description](../assets/hello_world_app.png)
 
-Entando's low code **App Builder** is a web interface that allows Composers to define pages, users, roles, access policies, and web content, it also enables composers to assemble content and modules onto those pages.  
+Entando's low code **App Builder** is a web interface that allows Composers to define pages, users, roles, access policies, and web content, it also enables composers to assemble content and modules onto those pages.
 
-Let's begin this tutorial by using Entando's OOTB wizard to provide a basic overview of the **App Builder**'s features.   
+Let's begin this tutorial by using Entando's OOTB wizard to provide a basic overview of the **App Builder**'s features.
 
-In the web window **<span style="text-decoration:underline;">enter</span>**:  
+In the web window **<u>enter</u>**:
 
 _Username_: **admin**
 
 _Password_: **adminadmin**
 
-(Note: After your 1st login, it will ask you to create a new password.  **<span style="text-decoration:underline;">Please enter one now</span>**.)
+(Note: After your 1st login, it will ask you to create a new password.  **<u>Please enter one now</u>**.)
 
 Once you’re logged in, a pop-up wizard will appear with instructions for creating your first web page.
 
-Complete the steps then click **<span style="text-decoration:underline;">CHECK</span>** within this window to continue to your next challenge.
+Complete the steps then click **<u>CHECK</u>** within this window to continue to your next challenge.
