@@ -7,12 +7,10 @@ teaser: In the previous challenge, we created a page, now we will see how to add
   on that page
 notes:
 - type: text
-  contents: |
-    # Congratulations Composer!
+  contents: |-
+    **ADD TABLEAU PBC INTO YOUR APPLICATION**
 
-    The Page has been created and now it's time to finalize the composition by including both the micro frontend and the content component.
-
-    Keep going. Success is right around the corner.
+    In this section we will learn how to add the Tableau PBC into our application.
 tabs:
 - title: App Builder
   type: website
@@ -21,46 +19,48 @@ tabs:
 difficulty: basic
 timelimit: 1200
 ---
-As a Composer, designing a page means selecting the components and placing them at the right places.
-We can do it by dragging & dropping elements from the **Widgets** tab, in the right Sidebar.
+**ADD TABLEAU PBC INTO YOUR APPLICATION**
 
-You can drop them into the dotted grey sections or frames.
+**STEP 1:**
 
-From the right sidebar, scroll down and expand the **Page** menu,
-drag & drop the **Logo widget** inside the **Logo** section on the page.
+As a Composer, designing a page means selecting components and placing them into pages. We do this by dragging & dropping elements from the tab on the right sidebar into the grey highlighted sections of the page on the left.
 
-From the right sidebar, scroll down and expand the **User** menu,
-drag & drop the **Tableau Sample Widget** inside the highlighted grey **Frame1** on the page.
+From the right sidebar,**<u> scroll down and expand the Page menu</u>**,
 
-Click on **Publish** at the bottom.
+then, **<u>drag & drop the LOGO WIDGET inside the Logo section onto the page</u>**.
 
-Click **View Published Page** at the top right to see your page live.
+From the right sidebar, **<u>scroll down and expand the User menu</u>**,
 
-You should see your page displaying the S&P Returns and Financial Indicators.
+then, **<u>drag & drop the Tableau Sample Widget inside the highlighted grey Frame1 on the page</u>**,
 
----
+then, **<u>click the SAVE button</u>** within the configuration window.
 
-The Content widget helps us to add more consistency to the Dashboard by highlighting indicators and providing some analysis.
+Next, **<u>click the Publish button </u>** at the bottom, and then **<u>click View Published Page</u>** at the top right to view your page.  You should now see your page displaying the S&P Returns and Financial Indicators.
 
-Scroll down and expand the **CMS** menu,
-drag & drop the **Content Widget** inside the grey **Frame2** on the page.
+**STEP 2:**
 
-You are automatically asked to select the Content to display in this Widget. Here, select an existing one by clicking on
-the **Add existing Content** button, then click on the checkbox aside the content named **Sample - About us**.
-Click on **Choose** to validate your choice.
+We will now add additional content to the page to add additional information to this Tableau dashboard highlighting indicators and providing some analysis.
 
-To finalize the content selection, click on the **Save** button.
+**<u>Scroll down and expand the CMS menu</u>**,
 
----
+then, **<u>drag & drop the Content Widget inside the grey Frame2 onto the page</u>**.
 
-Back to the Page Designer, we have to publish the page and check that it’s working as expected.
+You will be asked to select the content to display in this widget. Select an existing one by **<u>clicking on the Add existing Content button</u>**,
 
-Click on the **Publish** button at the bottom.
+then, **<u>click on the checkbox next to "Sample - About us"</u>**.
 
-Click **View Published Page** at the top right to see your page live.
+then, **<u>click on "Choose"</u>**,
+
+then, **<u>click on "Save"</u>** to finalize the selection.
+
+Next, let's publish the page and check that it’s working as expected.
+
+**<u>Click on Publish</u>** at the bottom,
+
+then, **<u>click on View Published Page</u>** at the top right to see your page live.
 
 Congratulations! You’ve completed this challenge.
 
-You’ve created a Dashboard page using an existing component and creating a new one to compose the page.
+You’ve created a Dashboard page using an existing component and added a web content article to the same page.
 
-Now let the Consumer use the application.
+Next, let's view the application from the Consumer role. **<u>Click Check</u>** at the bottom right to move to the next challenge.

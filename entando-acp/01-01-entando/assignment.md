@@ -6,15 +6,17 @@ title: Learning to Compose
 teaser: A simple challenge to learn to get started with composition phase
 notes:
 - type: text
-  contents: |
-    Entando is an Application Composition Platform(ACP). It enables Enterprises to quickly build Business Value for their users (Consumers). In addition to the Consumer persona, there are three other main personas responsible for enabling this business value. They are the Creator, Curator, and Composer.
+  contents: |-
+    **ENTANDO OVERVIEW:**
 
-    *In the Track, you are the Composer!*
+    Entando is an **Application Composition Platform**.  It allows teams to compose apps from a set of modules and web content.   Entando enables teams to organize work into 4 roles (individuals perform one or more roles). They are:
 
-    Meaning that you pull the necessary building blocks and integrate them. But, all of this is possible only in the Application Composition Platform!
+    - **_Creators_** (developers who build the individual modules)
+    - **_Curators_** (individuals who manage a library of modules)
+    - **_Composers_** (individuals who assemble modules into applications)
+    - **_Consumers_** (individuals who either use or manage application configurations, e.g., users/roles/content mgmt)
 
-
-    ## We’ll walk you through the process of doing so, and help you master it!
+    Next, we will demonstrate the role of an application **Composer** and walk through the steps to build your first composed application.
 - type: video
   url: https://www.youtube.com/embed/5KBdk-wRyw0
 tabs:
@@ -31,20 +33,24 @@ tabs:
 difficulty: basic
 timelimit: 120000
 ---
+**APP BUILDER OVERVIEW**
 
-Our goal is to help you Compose a Page that will contain several widgets. Take a look at this example page:
+For this challenge, all modules, content, and page layouts have been prebuilt by Creators.  We will assemble them into a single application as shown in this example:
 
 ![Image Description](../assets/hello_world_app.png)
 
-This learning will help you as Composer to understand how you can deliver business value to your users(Consumers). As you would be making sure that the widgets (Created by the Creator/Creator Team) are Composed together nice and clean on this Page!
+Entando's low code **App Builder** is a web interface that allows Composers to define pages, users, roles, access policies, and web content, it also enables composers to assemble content and modules onto those pages.
 
-To begin your journey as a Composer, login to the Entando App Builder first. These are the default credentials to log in:
+Let's begin this tutorial by using Entando's OOTB wizard to provide a basic overview of the **App Builder**'s features.
 
-- Username: admin
-- Password: adminadmin
+In the web window **<u>enter</u>**:
 
-Once you’re logged in, find the pop up tutorial with instructions on how to use those widgets on your newly created page. Follow that to complete the goal of this challenge!
+_Username_: **admin**
 
----
-Congratulations, in this challenge you've discovered how to quickly leverage an Application Composition Platform by creating and composing a page.
-Click on **Check** to continue to the next challenge to learn how to install a Packaged Business Capabilities.
+_Password_: **adminadmin**
+
+(Note: After your 1st login, it will ask you to create a new password.  **<u>Please enter one now</u>**.)
+
+Once you’re logged in, a pop-up wizard will appear with instructions for creating your first web page.
+
+Complete the steps then click **<u>CHECK</u>** within this window to continue to your next challenge.
